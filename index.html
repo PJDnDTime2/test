@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<div id='siteContentArea'></div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+<script>
+//Import dynamic site content script from google sheets
+$.ajax({
+  url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRZHhqjX6Uz4oreXXR1pxNkC23pZ7jP1fDQ8MbDPdFFZ49syaLoAmSuzO0yRRfEPNw18vlamleRICPM/pub?gid=712739038&single=true&range=A1&output=csv',
+  dataType: 'script',
+  success: success
+});
+
+var hash = window.location.hash;
+var gDocsURL;
+</script>
+</body>
+</html>
