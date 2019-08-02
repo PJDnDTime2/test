@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="doc-container">
+<head>
+	<!-- ... [OTHER INCLUDES] ... -->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type='text/javascript' src='unitegallery.min.js'></script> 
+	<link rel='stylesheet' href='unite-gallery.css' type='text/css' /> 
+	<script type='text/javascript' src='ug-theme-tiles.js'></script> 
+	<link rel='stylesheet' href='ug-theme-default.css' type='text/css' /> 
+</head>
+  
+<div id="gallery" style="display:none;">
+</div>
+  
+<script>
+$('#gallery').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vSv8R-e-_v-wBOPM5odHY9RIRxpIBQiBhCUsKF4uTjsyeVPo2ZPDMYuRb7Jdahst_-hPRqpapCuedZ_/pub?gid=712739038&single=true&output=tsv');
+</script>
+
+<script type="text/javascript"> 
+jQuery(document).ready(function(){ 
+	jQuery("#gallery").unitegallery({
+		tiles_type:"nested"
+	});
+}); 
+</script>
+
+</div>
+</body>
+</html>
