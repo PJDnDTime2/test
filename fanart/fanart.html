@@ -4,35 +4,28 @@
 <div class="doc-container">
 <head>
 	<!-- ... [OTHER INCLUDES] ... -->
-	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-	<link rel='stylesheet' href='unite-gallery.css' type='text/css' />
-	<link rel='stylesheet' href='ug-theme-default.css' type='text/css' /> 
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
+		
+		<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
+		<link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
 </head>
   
 <div id="gallery" style="display:none;">
+<img alt='The Samurai Llama Scorpion Stag by DFroGGotten1' src='https://cdn.discordapp.com/attachments/390354649615695872/604494920119484426/Samurai_Llama_Scorpion_Stag.jpg' data-image='https://cdn.discordapp.com/attachments/390354649615695872/604494920119484426/Samurai_Llama_Scorpion_Stag.jpg'>
 </div>
   
 <script>
-var functionOne = function() {
-	var r = $.Deferred();
-		$('#gallery').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vSv8R-e-_v-wBOPM5odHY9RIRxpIBQiBhCUsKF4uTjsyeVPo2ZPDMYuRb7Jdahst_-hPRqpapCuedZ_/pub?gid=712739038&single=true&output=tsv');
-	return r;
-};
+$('#gallery').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vSv8R-e-_v-wBOPM5odHY9RIRxpIBQiBhCUsKF4uTjsyeVPo2ZPDMYuRb7Jdahst_-hPRqpapCuedZ_/pub?gid=712739038&single=true&output=tsv');
+</script>
 
-var functionTwo = function() {
-	$.getScript( "unitegallery.min.js", function() {
-		$.getScript( "g-theme-tiles.js", function() {
-			$(document).ready(function(){ 
-				$("#gallery").unitegallery({
-					tiles_type:"nested"
-				});
-			});
-		});
+<script type="text/javascript"> 
+jQuery(document).ready(function(){ 
+	jQuery("#gallery").unitegallery({
+		tiles_type:"nested"
 	});
-};
-	
-// Now call the functions one after the other using the done method
-functionOne().done( functionTwo() );
+}); 
 </script>
 
 </div>
