@@ -5,9 +5,7 @@
 <head>
 	<!-- ... [OTHER INCLUDES] ... -->
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-	<script type='text/javascript' src='unitegallery.min.js'></script> 
-	<link rel='stylesheet' href='unite-gallery.css' type='text/css' /> 
-	<script type='text/javascript' src='ug-theme-tiles.js'></script> 
+	<link rel='stylesheet' href='unite-gallery.css' type='text/css' />
 	<link rel='stylesheet' href='ug-theme-default.css' type='text/css' /> 
 </head>
   
@@ -22,13 +20,17 @@ var functionOne = function() {
 };
 
 var functionTwo = function() {
-	jQuery(document).ready(function(){ 
-		jQuery("#gallery").unitegallery({
-			tiles_type:"nested"
+	$.getScript( "unitegallery.min.js", function() {
+		$.getScript( "g-theme-tiles.js", function() {
+			$(document).ready(function(){ 
+				$("#gallery").unitegallery({
+					tiles_type:"nested"
+				});
+			});
 		});
-	}); 
+	});
 };
-
+	
 // Now call the functions one after the other using the done method
 functionOne().done( functionTwo() );
 </script>
