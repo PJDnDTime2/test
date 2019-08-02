@@ -116,7 +116,7 @@ nav > a, .subnav tr td > a{
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
 }
