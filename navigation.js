@@ -29,7 +29,7 @@ $("a").click(function () {
 
 // sticky navbar
 window.onscroll = function() {myFunction()};
-var navbar = document.getElementByClass("navigationbar");
+var navbar = document.getElementByID("navigationbar");
 var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
