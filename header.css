@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1200px) {
-	body {
+	body, .navigationbar {
 		width: calc(1200px - 20px);
 	}
 	.desktop {
@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-	body {
+	body, .navigationbar {
 		width: calc(100% - 20px);
 	}
 	.desktop {
