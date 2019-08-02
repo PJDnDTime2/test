@@ -15,15 +15,22 @@
 </div>
   
 <script>
-$('#gallery').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vSv8R-e-_v-wBOPM5odHY9RIRxpIBQiBhCUsKF4uTjsyeVPo2ZPDMYuRb7Jdahst_-hPRqpapCuedZ_/pub?gid=712739038&single=true&output=tsv');
-</script>
+var functionOne = function() {
+	var r = $.Deferred();
+		$('#gallery').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vSv8R-e-_v-wBOPM5odHY9RIRxpIBQiBhCUsKF4uTjsyeVPo2ZPDMYuRb7Jdahst_-hPRqpapCuedZ_/pub?gid=712739038&single=true&output=tsv');
+	return r;
+};
 
-<script type="text/javascript"> 
-jQuery(document).ready(function(){ 
-	jQuery("#gallery").unitegallery({
-		tiles_type:"nested"
-	});
-}); 
+var functionTwo = function() {
+	jQuery(document).ready(function(){ 
+		jQuery("#gallery").unitegallery({
+			tiles_type:"nested"
+		});
+	}); 
+};
+
+// Now call the functions one after the other using the done method
+functionOne().done( functionTwo() );
 </script>
 
 </div>
