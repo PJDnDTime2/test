@@ -5,3 +5,11 @@ cursor: pointer;
 body {
 	background-color: #f6f6f6;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
