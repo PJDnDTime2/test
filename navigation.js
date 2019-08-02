@@ -18,13 +18,15 @@ $(document).ready(function() {
 		$(clickedID).slideToggle();
     });
 });
-$("a").click(function () {
-	if ($(this).hasClass("redtext")) {
-		$("a").removeClass("redtext");
-	} else {
-		$("a").removeClass("redtext");
-		$(this).toggleClass("redtext");
-	}
+$(document).ready(function() {
+	$("a").click(function () {
+		if ($(this).hasClass("redtext")) {
+			$("a").removeClass("redtext");
+		} else {
+			$("a").removeClass("redtext");
+			$(this).toggleClass("redtext");
+		}
+	});
 });
 
 // sticky navbar
