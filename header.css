@@ -29,7 +29,7 @@ body {
 .desktop, .mobile, .ddmenu {
 	width: 100%;
 	border-bottom: 1px solid black;
-	background-image: url("paper.png");
+	background-color: #fdf1db;
 }
 
 .subnav {
@@ -38,7 +38,7 @@ body {
 	table-layout: fixed;
 	vertical-align: middle;
 	line-height: 30px;
-	background-image: url("paper.png");
+	background-color: #fdf1db;
 }
 
 #mobileMenu, #menuMPjMenu, #menuMPrMenu, #menuMBrMenu {
@@ -73,7 +73,7 @@ body {
 .desktop {
 	justify-content: space-around;
 	width: 100%;
-	background-image: url("paper.png");
+	background-color: #fdf1db;
 }
 
 .desktop > a, .mobile > a, .mobile > a {
