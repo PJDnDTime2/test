@@ -7,6 +7,9 @@ cursor: pointer;
 
 body {
 	background-color: #f6f6f6;
+	font-size:13pt;
+	font-family:"Spectral";
+	font-weight:500
 }
 
 html {
