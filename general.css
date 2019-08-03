@@ -6,7 +6,8 @@ cursor: pointer;
 }
 
 body {
-	background-color: #f6f6f6;
+	background-image: url("bg.jpg");
+	background-repeat: repeat;
 	font-size:13pt;
 	font-family:"Spectral";
 	font-weight:500;
