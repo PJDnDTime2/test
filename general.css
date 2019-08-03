@@ -28,13 +28,15 @@ body {
 }
 
 h2 {
+	padding:0;
+	margin:0;
 	color:#980000;
 	font-weight:600;
-	text-decoration:none;
-	vertical-align:baseline;
 	font-size:24pt;
+	line-height:1.25;
+	page-break-after:avoid;
 	font-family:"Spectral SC";
-	font-style:normal;
+	text-align:left;
 }
 
 p {
