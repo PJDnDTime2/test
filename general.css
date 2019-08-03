@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC:400,400i,600,600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,400i,700,700i&display=swap');
+
 a {
 cursor: pointer;
 }
@@ -19,4 +22,14 @@ body {
   min-height: 100%;
   background-image: url('paper.png');
   background-repeat: repeat-y;
+}
+
+h2 {
+	color:#980000;
+	font-weight:600;
+	text-decoration:none;
+	vertical-align:baseline;
+	font-size:24pt;
+	font-family:"Spectral SC";
+	font-style:normal;
 }
