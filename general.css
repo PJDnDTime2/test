@@ -23,8 +23,7 @@ body {
 .fullpagecontainer {
   width:100%;
   min-height: 100%;
-  background-image: url('paper.png');
-  background-repeat: repeat;
+  background-color: #fdf1db;
 }
 
 h1 {
