@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <div class="doc-container">
     <style>
     input[type=text], select {
@@ -12,7 +13,6 @@
     border-radius: 4px;
     box-sizing: border-box;
     }
-
     input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -23,24 +23,18 @@
     border-radius: 4px;
     cursor: pointer;
     }
-
     input[type=submit]:hover {
     background-color: #45a049;
     }
-
     .input-wrap {
     width: 150px;
     }
-
     .input-wrap2 {
     width: 300px;
     }
-
     div.formcontainer {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 90%;
+    width: 100%;
     }
     </style>
     <div>
@@ -117,11 +111,11 @@
       </div>
     </div><iframe frameborder="0" height="0" id="dummyframe" name="dummyframe" width="0"></iframe> 
     <script>
-      var thursday = new Date().getDay();
-    $.when( thursday == 4 ) ).then(function() {
-    $("#signupEnabled").hide();
-    $("#signupDisabled").show();
-    });
+    var thursday = new Date().getDay();
+    if (thursday == 4) {
+    	$("#signupEnabled").hide();
+    	$("#signupDisabled").show();
+    }
     </script>
   </div>
 </body>
