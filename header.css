@@ -41,7 +41,7 @@ body {
 	background-color: #fdf1db;
 }
 
-#mobileMenu, #menuMPjMenu, #menuMPrMenu, #menuMBrMenu {
+#mobileMenu, #menuMPjMenu, #menuMPrMenu, #menuMBrMenu, #menuMMoMenu {
 	padding-left: 20px;
 	display: none;
 	width: calc(100% - 20px);
