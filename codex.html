@@ -33,13 +33,6 @@ XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexF
 
 <script>
 
-$(document).ready(function(){
-	$('.item').click(function(){
-		$(this).toggleClass('block');
-		$(this).children('.idesc').toggle();
-	});
-});
-
 function codexFilter() {
   var zChar = $('#searchChar').val().toLowerCase();
   var zTwitch = $('#searchTwitch').val().toLowerCase();
@@ -63,7 +56,12 @@ function codexFilter() {
 }
 
 $(document).ready(function(){
-	$('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J5Akpo3kcTawo3K1cSWY6JBN6gRV3bRh6NhyYElKCjAtoDfktSMWSRHA-c9Lsd5zvs/pub?gid=2071477164&single=true&output=tsv');
+	$('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J5Akpo3kcTawo3K1cSWY6JBN6gRV3bRh6NhyYElKCjAtoDfktSMWSRHA-c9Lsd5zvs/pub?gid=2071477164&single=true&output=tsv', function(){
+		$('.item').click(function(){
+			$(this).toggleClass('block');
+			$(this).children('.idesc').toggle();
+		});
+	});
 });
 
 </script>
