@@ -14,71 +14,7 @@
 </head>
 <body>
 
-<h1>Character Codex</h1>
-
-<p>
-<input class="search" id="searchChar" type="text" onchange="codexFilter()" placeholder="Search by Character..." >
-<input class="search" id="searchTwitch" type="text" onchange="codexFilter()" placeholder="Search by Twitch User...">
-<input class="search" id="searchRace" type="text" onchange="codexFilter()" placeholder="Search by Race...">
-<input class="search" id="searchClass" type="text" onchange="codexFilter()" placeholder="Search by Class...">
-<input class="search" id="searchTier" type="text" onchange="codexFilter()" placeholder="Search by Tier...">
-</p><p>
-XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexFilter()" min="1" max="48" value="1"> — <input id="searchXPmax" type="number" onchange="codexFilter()" min="1" max="153" value="153">
-</p>
-
-<table id="codex">
-</table>
-
-<script>
-
-$(document).ready(function(){
-	$(".item").click(function(){
-		$(this).toggleClass("block");
-		$(this).children(".idesc").toggle();
-	});
-});
-
-function codexFilter() {
-  var zChar = $("#searchChar").val().toLowerCase();
-  var zTwitch = $("#searchTwitch").val().toLowerCase();
-  var zRace = $("#searchRace").val().toLowerCase();
-  var zClass = $("#searchClass").val().toLowerCase();
-  var zTier = $("#searchTier").val().toLowerCase();
-  var zXPmin = parseInt($("#searchXPmin").val());
-  var zXPmax = parseInt($("#searchXPmax").val());
-  $("#codex tr").filter(function() {
-    $(this).toggle(
-      $(this).children("td:nth-child(2)").text().toLowerCase().indexOf(zChar) > -1 &&
-      $(this).children("td:nth-child(3)").text().toLowerCase().indexOf(zTwitch) > -1 &&
-      $(this).children("td:nth-child(4)").text().toLowerCase().indexOf(zRace) > -1 &&
-      $(this).children("td:nth-child(5)").text().toLowerCase().indexOf(zClass) > -1 &&
-      $(this).children("td:nth-child(8)").text().toLowerCase().indexOf(zTier) > -1 &&
-      $(this).children("td:nth-child(8)").text().toLowerCase().indexOf(zTier) > -1 &&
-      $(this).children("td:nth-child(6)").text().valueOf() >= zXPmin &&
-      $(this).children("td:nth-child(6)").text().valueOf() <= zXPmax
-    )
-  });
-}
-
-$('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J5Akpo3kcTawo3K1cSWY6JBN6gRV3bRh6NhyYElKCjAtoDfktSMWSRHA-c9Lsd5zvs/pub?gid=2071477164&single=true&output=tsv');
-
-</script>
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<style>
-#codex {
-  border-collapse: collapse;
-  width: 100%;
-}
-.block {
-  display: block;
-  padding-top: 10px;
-}
-</style>
-</head>
-<body>
+<div><p style="padding-top:7pt;margin:0;color:#000000;font-weight:500;padding-left:0;font-size:13pt;padding-bottom:0pt;line-height:1.25;font-family:&quot;Spectral&quot;;orphans:2;widows:2;height:13pt;text-align:left;padding-right:0"><span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:2pt;font-family:&quot;Spectral&quot;;font-style:normal"></span></p></div>
 
 <h1>Character Codex</h1>
 
@@ -90,7 +26,7 @@ $('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J
 <input class="search" id="searchTier" type="text" onchange="codexFilter()" placeholder="Search by Tier...">
 </p><p>
 XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexFilter()" min="1" max="48" value="1"> — <input id="searchXPmax" type="number" onchange="codexFilter()" min="1" max="153" value="153">
-</p>
+</p><br>
 
 <table id="codex">
 </table>
@@ -98,35 +34,37 @@ XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexF
 <script>
 
 $(document).ready(function(){
-	$(".item").click(function(){
-		$(this).toggleClass("block");
-		$(this).children(".idesc").toggle();
+	$('.item').click(function(){
+		$(this).toggleClass('block');
+		$(this).children('.idesc').toggle();
 	});
 });
 
 function codexFilter() {
-  var zChar = $("#searchChar").val().toLowerCase();
-  var zTwitch = $("#searchTwitch").val().toLowerCase();
-  var zRace = $("#searchRace").val().toLowerCase();
-  var zClass = $("#searchClass").val().toLowerCase();
-  var zTier = $("#searchTier").val().toLowerCase();
-  var zXPmin = parseInt($("#searchXPmin").val());
-  var zXPmax = parseInt($("#searchXPmax").val());
-  $("#codex tr").filter(function() {
+  var zChar = $('#searchChar').val().toLowerCase();
+  var zTwitch = $('#searchTwitch').val().toLowerCase();
+  var zRace = $('#searchRace').val().toLowerCase();
+  var zClass = $('#searchClass').val().toLowerCase();
+  var zTier = $('#searchTier').val().toLowerCase();
+  var zXPmin = parseInt($('#searchXPmin').val());
+  var zXPmax = parseInt($('#searchXPmax').val());
+  $('#codex tr').filter(function() {
     $(this).toggle(
-      $(this).children("td:nth-child(2)").text().toLowerCase().indexOf(zChar) > -1 &&
-      $(this).children("td:nth-child(3)").text().toLowerCase().indexOf(zTwitch) > -1 &&
-      $(this).children("td:nth-child(4)").text().toLowerCase().indexOf(zRace) > -1 &&
-      $(this).children("td:nth-child(5)").text().toLowerCase().indexOf(zClass) > -1 &&
-      $(this).children("td:nth-child(8)").text().toLowerCase().indexOf(zTier) > -1 &&
-      $(this).children("td:nth-child(8)").text().toLowerCase().indexOf(zTier) > -1 &&
-      $(this).children("td:nth-child(6)").text().valueOf() >= zXPmin &&
-      $(this).children("td:nth-child(6)").text().valueOf() <= zXPmax
+      $(this).children('td:nth-child(2)').text().toLowerCase().indexOf(zChar) > -1 &&
+      $(this).children('td:nth-child(3)').text().toLowerCase().indexOf(zTwitch) > -1 &&
+      $(this).children('td:nth-child(4)').text().toLowerCase().indexOf(zRace) > -1 &&
+      $(this).children('td:nth-child(5)').text().toLowerCase().indexOf(zClass) > -1 &&
+      $(this).children('td:nth-child(8)').text().toLowerCase().indexOf(zTier) > -1 &&
+      $(this).children('td:nth-child(8)').text().toLowerCase().indexOf(zTier) > -1 &&
+      $(this).children('td:nth-child(6)').text().valueOf() >= zXPmin &&
+      $(this).children('td:nth-child(6)').text().valueOf() <= zXPmax
     )
   });
 }
 
-$('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J5Akpo3kcTawo3K1cSWY6JBN6gRV3bRh6NhyYElKCjAtoDfktSMWSRHA-c9Lsd5zvs/pub?gid=2071477164&single=true&output=tsv');
+$(document).ready(function(){
+	$('#codex').load('https://docs.google.com/spreadsheets/d/e/2PACX-1vQzSRxzRfBqP8J5Akpo3kcTawo3K1cSWY6JBN6gRV3bRh6NhyYElKCjAtoDfktSMWSRHA-c9Lsd5zvs/pub?gid=2071477164&single=true&output=tsv');
+}
 
 </script>
 </body>
