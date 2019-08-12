@@ -68,3 +68,8 @@ p {
 	text-align:left;
 	padding-right:0;
 }
+
+.stickySearch {
+  position: fixed !important;
+  top: 42 px;
+}
