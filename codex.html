@@ -15,10 +15,6 @@
   font-weight: normal;
   font-style: italic;
 }
-.stickySearch {
-  position: fixed !important;
-  top: 42 px;
-}
 </style>
 </head>
 <body>
@@ -78,9 +74,9 @@ $(document).ready(function(){
 document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function() {stickSearch()};
   var searchArea = document.getElementById("searchOptions");
-  var sticky = searchArea.offsetTop;
+  var stickyarea = searchArea.offsetTop;
   function stickSearch() {
-    if (window.pageYOffset >= sticky) {
+    if (window.pageYOffset >= stickyarea) {
       searchArea.classList.add("stickySearch");
     } else {
       searchArea.classList.remove("stickySearch");
