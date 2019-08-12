@@ -25,13 +25,14 @@
 <h1>Character Codex</h1>
 
 <p>
-<input class="search" id="searchChar" type="text" onchange="codexFilter()" placeholder="Search by Character..." >
-<input class="search" id="searchTwitch" type="text" onchange="codexFilter()" placeholder="Search by Twitch User...">
-<input class="search" id="searchRace" type="text" onchange="codexFilter()" placeholder="Search by Race...">
-<input class="search" id="searchClass" type="text" onchange="codexFilter()" placeholder="Search by Class...">
-<input class="search" id="searchTier" type="text" onchange="codexFilter()" placeholder="Search by Tier...">
+<input class="search" id="searchChar" type="text" onchange="codexFilter()" placeholder="Character..." size="12">
+<input class="search" id="searchTwitch" type="text" onchange="codexFilter()" placeholder="Twitch User..." size="12">
+<input class="search" id="searchRace" type="text" onchange="codexFilter()" placeholder="Race..." size="12">
+<input class="search" id="searchClass" type="text" onchange="codexFilter()" placeholder="Class..." size="12">
+<input class="search" id="searchTier" type="text" onchange="codexFilter()" placeholder="Tier..." size="12">
+<input class="search" id="searchItem" type="text" onchange="codexFilter()" placeholder="Item..." size="12">
 </p><p>
-XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexFilter()" min="1" max="48" value="1"> — <input id="searchXPmax" type="number" onchange="codexFilter()" min="1" max="153" value="153">
+XP Filter: <input class="search" id="searchXPmin" type="number" onchange="codexFilter()" min="1" max="153" value="1"> — <input id="searchXPmax" type="number" onchange="codexFilter()" min="1" max="153" value="153">
 </p><br>
 </div>
 <table id="codex">
@@ -45,6 +46,7 @@ function codexFilter() {
   var zRace = $('#searchRace').val().toLowerCase();
   var zClass = $('#searchClass').val().toLowerCase();
   var zTier = $('#searchTier').val().toLowerCase();
+  var zItem = $('#searchItem').val().toLowerCase();
   var zXPmin = parseInt($('#searchXPmin').val());
   var zXPmax = parseInt($('#searchXPmax').val());
   $('#codex tr').filter(function() {
@@ -55,6 +57,7 @@ function codexFilter() {
       $(this).children('td:nth-child(5)').text().toLowerCase().indexOf(zClass) > -1 &&
       $(this).children('td:nth-child(8)').text().toLowerCase().indexOf(zTier) > -1 &&
       $(this).children('td:nth-child(8)').text().toLowerCase().indexOf(zTier) > -1 &&
+      $(this).children('td:nth-child(9)').text().toLowerCase().indexOf(zItem) > -1 &&
       $(this).children('td:nth-child(6)').text().valueOf() >= zXPmin &&
       $(this).children('td:nth-child(6)').text().valueOf() <= zXPmax
     )
