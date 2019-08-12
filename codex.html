@@ -15,6 +15,10 @@
   font-weight: normal;
   font-style: italic;
 }
+.stickySearch {
+  position: fixed !important;
+  top: 42 px;
+}
 </style>
 </head>
 <body>
@@ -23,7 +27,7 @@
 
 <h1>Character Codex</h1>
 
-<p>
+<p id="searchOptions">
 <input class="search" id="searchChar" type="text" onchange="codexFilter()" placeholder="Search by Character..." >
 <input class="search" id="searchTwitch" type="text" onchange="codexFilter()" placeholder="Search by Twitch User...">
 <input class="search" id="searchRace" type="text" onchange="codexFilter()" placeholder="Search by Race...">
@@ -69,6 +73,20 @@ $(document).ready(function(){
 	});
 });
 
+// sticky searcharea
+document.addEventListener('DOMContentLoaded', function() {
+  window.onscroll = function() {stickSearch()};
+  var searchArea = document.getElementById("searchOptions");
+  var sticky = searchArea.offsetTop;
+  function stickSearch() {
+    if (window.pageYOffset >= sticky) {
+      searchArea.classList.add("stickySearch");
+    } else {
+      searchArea.classList.remove("stickySearch");
+    }
+  }
+});
+	
 </script>
 </body>
 </html>
