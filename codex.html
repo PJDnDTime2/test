@@ -19,9 +19,9 @@
 </head>
 <body>
 
+<div id="searchOptions" class="stickysticky">
 <div><p style="padding-top:7pt;margin:0;color:#000000;font-weight:500;padding-left:0;font-size:13pt;padding-bottom:0pt;line-height:1.25;font-family:&quot;Spectral&quot;;orphans:2;widows:2;height:13pt;text-align:left;padding-right:0"><span style="color:#000000;font-weight:500;text-decoration:none;vertical-align:baseline;font-size:2pt;font-family:&quot;Spectral&quot;;font-style:normal"></span></p></div>
 
-<div id="searchOptions">
 <h1>Character Codex</h1>
 
 <p>
@@ -68,20 +68,6 @@ $(document).ready(function(){
 			$(this).children('.idesc').toggle();
 		});
 	});
-});
-
-// sticky searcharea
-document.addEventListener('DOMContentLoaded', function() {
-  window.onscroll = function() {stickSearch()};
-  var searchArea = document.getElementById("searchOptions");
-  var stickyarea = searchArea.offsetTop;
-  function stickSearch() {
-    if (window.pageYOffset >= stickyarea) {
-      searchArea.classList.add("stickySearch");
-    } else {
-      searchArea.classList.remove("stickySearch");
-    }
-  }
 });
 	
 </script>
