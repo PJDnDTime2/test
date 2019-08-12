@@ -71,8 +71,15 @@ p {
 	padding-right:0;
 }
 
-.stickysticky{
+.stickynav{
      position: -webkit-sticky; /* Safari */  
      position: sticky; 
      top: 0;
+     z-inded: 2;
+}
+.stickycodex{
+     position: -webkit-sticky; /* Safari */  
+     position: sticky; 
+     top: 42;
+     z-inded: 1;
 }
