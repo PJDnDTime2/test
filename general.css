@@ -80,6 +80,6 @@ p {
 .stickycodex{
      position: -webkit-sticky; /* Safari */  
      position: sticky; 
-     top: 32;
+     top: 28;
      z-index: 1;
 }
