@@ -25,7 +25,6 @@ body {
 .fullpagecontainer {
   width:100%;
   min-height: 100%;
-  background-color: #fdf1db;
   overflow:visible;
 }
 
