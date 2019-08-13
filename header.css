@@ -1,6 +1,7 @@
 @media only screen and (min-width: 1200px) {
-	body{
+	.bodyCon{
 		width: calc(1200px - 20px);
+                margin: auto;
 	}
 	.navsquish {
 		width: calc(1200px - 20px);
@@ -15,7 +16,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-	body, .navigationbar, .navsquish{
+	.bodyCon, .navigationbar, .navsquish{
 		width: 100%;
 	}
 	.desktop {
@@ -24,10 +25,6 @@
 	.mobile {
 		display: block !important;
 	}
-}
-
-body {
-	margin: auto;
 }
 
 .desktop, .mobile, .ddmenu {
@@ -67,7 +64,7 @@ body {
 	vertical-align: middle;
 	line-height: 40px;
 	background-color: #fdf1db;
-  width: 100%;
+        width: 100%;
 }
 
 .bannerdndtime {
@@ -130,6 +127,6 @@ nav > a, .subnav tr td > a{
 
 .headerwrapper {
   width:100%;
-  position:relative;
   background-color: #20d8ff;
+  overflow: visible;
 }
