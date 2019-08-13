@@ -22,7 +22,7 @@ body {
 }
 
 .fullpagecontainer {
-  width:100%;
+  width:100vw;
   min-height: 100%;
   overflow:visible;
 }
