@@ -23,7 +23,7 @@ body {
 }
 
 .fullpagecontainer {
-  width: 100vw;
+  width: 100%;
   min-height: 100%;
   overflow: visible;
 }
