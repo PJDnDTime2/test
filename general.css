@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC:400,400i,600,600i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Spectral:400,400i,700,700i&display=swap');
-
 a {
-cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-	background-color: #20d8ff;
-	font-size:13pt;
-	font-family:"Spectral";
-	font-weight:500;
-        overflow:visible;
+  background-color: #20d8ff;
+  font-size: 13pt;
+  font-family: "Spectral";
+  font-weight: 500;
+  overflow: visible;
 }
 
 html {
@@ -22,64 +21,67 @@ body {
 }
 
 .fullpagecontainer {
-  width:100vw;
+  width: 100vw;
   min-height: 100%;
-  overflow:visible;
+  overflow: visible;
 }
 
 h1 {
-	padding:0;
-	margin:0;
-	color:#980000;
-	font-weight:600;
-	font-size:24pt;
-	line-height:1.25;
-	page-break-after:avoid;
-	font-family:"Spectral SC";
-	text-align:left;
+  padding: 0;
+  margin: 0;
+  color: #980000;
+  font-weight: 600;
+  font-size: 24pt;
+  line-height: 1.25;
+  page-break-after: avoid;
+  font-family: "Spectral SC";
+  text-align: left;
 }
 
 h2 {
-	padding-top:0pt;
-	margin:0;
-	color:#980000;
-	border-bottom-color:#bf9000;
-	font-weight:600;
-	padding-left:0;
-	font-size:16pt;
-	padding-bottom:2pt;
-	line-height:1.0;
-	page-break-after:avoid;
-	border-bottom-width:1.5pt;
-	font-family:"Spectral SC";
-	border-bottom-style:solid;
-	text-align:left;
-	padding-right:0
+  padding-top: 0pt;
+  margin: 0;
+  color: #980000;
+  border-bottom-color: #bf9000;
+  font-weight: 600;
+  padding-left: 0;
+  font-size: 16pt;
+  padding-bottom: 2pt;
+  line-height: 1.0;
+  page-break-after: avoid;
+  border-bottom-width: 1.5pt;
+  font-family: "Spectral SC";
+  border-bottom-style: solid;
+  text-align: left;
+  padding-right: 0
 }
 
 p {
-	padding-top:7pt;
-	margin:0;
-	color:#000000;
-	padding-left:0;
-	padding-bottom:0pt;
-	line-height:1.25;
-	font-family:"Spectral";
-	text-align:left;
-	padding-right:0;
+  padding-top: 7pt;
+  margin: 0;
+  color: #000000;
+  padding-left: 0;
+  padding-bottom: 0pt;
+  line-height: 1.25;
+  font-family: "Spectral";
+  text-align: left;
+  padding-right: 0;
 }
 
-.stickynav{
-     position: -webkit-sticky; /* Safari */  
-     position: sticky; 
-     top: 0;
-     z-index: 2;
+.stickynav {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
-.stickycodex{
-     position: -webkit-sticky; /* Safari */  
-     position: sticky; 
-     top: 24;
-     z-index: 1;
-     background-image: url("bg.jpg");
-     background-repeat: repeat;
+
+.stickycodex {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 24;
+  z-index: 1;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
 }
