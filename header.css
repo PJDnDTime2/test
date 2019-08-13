@@ -30,12 +30,17 @@
   }
 }
 
+#siteContentArea {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .bodyCon {
   background-image: url("bg.jpg");
   background-repeat: repeat;
   overflow: visible;
   min-height: 100%;
-  width:100%;
+  max-width:100%;
   position:relative;
   left:0;
 }
