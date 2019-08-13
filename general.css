@@ -81,4 +81,6 @@ p {
      position: sticky; 
      top: 28;
      z-index: 1;
+     background-image: url("bg.jpg");
+     background-repeat: repeat;
 }
