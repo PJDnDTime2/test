@@ -2,10 +2,6 @@
 	body{
 		width: calc(1200px - 20px);
 	}
-	.navigationbar {
-		width: 100vw;
-		margin-left: calc((1180px - 100vw)/2);
-	}
 	.navsquish {
 		width: calc(1200px - 20px);
 		margin: auto;	
@@ -71,6 +67,7 @@ body {
 	vertical-align: middle;
 	line-height: 40px;
 	background-color: #fdf1db;
+  width: 100%;
 }
 
 .bannerdndtime {
