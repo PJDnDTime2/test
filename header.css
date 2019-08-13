@@ -5,7 +5,7 @@
 	}
 	.navsquish {
 		width: calc(1200px - 20px);
-		margin: auto;	
+		margin: 0px;	
 	}
 	.desktop {
 		display: flex !important;
