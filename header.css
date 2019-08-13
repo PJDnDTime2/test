@@ -82,11 +82,11 @@
 }
 
 .bannertwitch {
-  height: 100%;
+  height: calc(100% - 5px);
   width: auto;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
   z-index: 1;
 }
 
