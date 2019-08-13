@@ -1,31 +1,31 @@
 @media only screen and (min-width: 1200px) {
-	.bodyCon{
-		width: calc(1200px - 20px);
-                margin: auto;
-	}
-	.navsquish {
-		width: calc(1200px - 20px);
-		margin: auto;	
-	}
-	.desktop {
-		display: flex !important;
-	}
-	.mobile {
-		display: none !important;
-	}
+  .bodyCon {
+    width: calc(1200px - 20px);
+    margin: auto;
+  }
+  .navsquish {
+    width: calc(1200px - 20px);
+    margin: auto;
+  }
+  .desktop {
+    display: flex !important;
+  }
+  .mobile {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-	.bodyCon, .navigationbar, .navsquish{
-		width: 100%;
-                margin: 0px;
-	}
-	.desktop {
-		display: none !important;
-	}
-	.mobile {
-		display: block !important;
-	}
+  .bodyCon, .navigationbar, .navsquish {
+    width: 100%;
+    margin: 0px;
+  }
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
 }
 
 .bodyCon {
@@ -34,99 +34,121 @@
 }
 
 .desktop, .mobile, .ddmenu {
-	width: 100%;
-	background-color: #fdf1db;
+  width: 100%;
+  background-color: #fdf1db;
 }
 
 .ddmenu:before {
-    position: absolute;
-    left: 0;
-    content: " ";
-    height: 0px;
-    border-top: 1px solid black;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  content: " ";
+  height: 0px;
+  border-top: 1px solid black;
+  width: 100%;
 }
 
 .subnav {
-	width: 100%;
-	padding: 0 40px;
-	table-layout: fixed;
-	vertical-align: middle;
-	line-height: 30px;
-	background-color: #fdf1db;
+  width: 100%;
+  padding: 0 40px;
+  table-layout: fixed;
+  vertical-align: middle;
+  line-height: 30px;
+  background-color: #fdf1db;
 }
 
 #mobileMenu, #menuMPjMenu, #menuMPrMenu, #menuMBrMenu, #menuMMoMenu {
-	padding-left: 20px;
-	display: none;
-	width: calc(100% - 20px);
-	vertical-align: middle;
-	line-height: 30px;
+  padding-left: 20px;
+  display: none;
+  width: calc(100% - 20px);
+  vertical-align: middle;
+  line-height: 30px;
 }
 
 .navigationbar {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	vertical-align: middle;
-	line-height: 40px;
-	background-color: #fdf1db;
-        width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  vertical-align: middle;
+  line-height: 40px;
+  background-color: #fdf1db;
+  width: 100%;
 }
 
 .bannerdndtime {
-	max-width: 100%;
-	height: auto;
-	z-index: -1;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
 }
 
 .bannertwitch {
-	height: 100%;
-	width: auto;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	z-index: 1;	
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .desktop {
-	justify-content: space-around;
-	width: 100%;
-	background-color: #fdf1db;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #fdf1db;
 }
 
-.desktop > a, .mobile > a, .mobile > a {
-	font-size: 24px;
+.desktop>a, .mobile>a, .mobile>a {
+  font-size: 24px;
 }
 
-nav > a, .subnav tr td > a{
-	text-decoration: none;
-	color: #1c1c1c;
+nav>a, .subnav tr td>a {
+  text-decoration: none;
+  color: #1c1c1c;
 }
 
-.redtext, .desktop > a:hover, .subnav tr td > a:hover, .mobile > a:hover, nav > a:hover  {
-	color: #990000 !important;
+.redtext, .desktop>a:hover, .subnav tr td>a:hover, .mobile>a:hover, nav>a:hover {
+  color: #990000 !important;
 }
 
-.mobile > a {
-	padding: 0 20px;
+.mobile>a {
+  padding: 0 20px;
 }
 
 .bannertwitch:hover {
-	animation: shake 0.5s;
-	animation-iteration-count: infinite;
-	filter:brightness(125%) contrast(150%);
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  filter: brightness(125%) contrast(150%);
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -1px) rotate(-1deg); }
-  20% { transform: translate(-2px, 0px) rotate(1deg); }
-  30% { transform: translate(2px, 1px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 1px) rotate(-1deg); }
-  60% { transform: translate(-2px, 1px) rotate(0deg); }
-  70% { transform: translate(2px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 1px) rotate(0deg); }
-  100% { transform: translate(1px, -1px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-2px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-2px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
 }
