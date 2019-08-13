@@ -32,7 +32,7 @@
   background-image: url("bg.jpg");
   background-repeat: repeat;
   overflow: visible;
-  height: 100%;
+  min-height: 100%;
 }
 
 .desktop, .mobile, .ddmenu {
