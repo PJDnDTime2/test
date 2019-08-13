@@ -4,7 +4,7 @@
 	}
 	.navigationbar {
 		width: 100vw;
-		margin-left: calc((1200px - 100vw)/2);
+		margin-left: calc((1180px - 100vw)/2);
 	}
 	.navsquish {
 		width: calc(1200px - 20px);
