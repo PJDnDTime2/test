@@ -19,7 +19,7 @@
 .stickycodex {
   position: -webkit-sticky;  /* Safari */
   position: sticky;
-  top: 24;
+  top: 24px;
   z-index: 1;
   background-image: url("bg.jpg");
   background-repeat: repeat;
