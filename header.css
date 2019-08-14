@@ -4,7 +4,7 @@
     margin: auto;
     overflow: visible;
   }
-  .navsquish {
+  .navsquish, .bloo {
     width: calc(1200px - 20px);
     margin: auto;
   }
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  #siteContentArea, .navigationbar, .navsquish {
+  #siteContentArea, .navigationbar, .navsquish, .bloo {
     width: 100%;
     margin: 0px;
     overflow: visible;
@@ -28,6 +28,13 @@
   .mobile {
     display: block !important;
   }
+}
+
+.bloo {
+  position:relative;
+  line-height:0;
+  width:100%;
+  background-color:#20d8ff;
 }
 
 #siteContentArea {
@@ -66,7 +73,8 @@
   table-layout: fixed;
   vertical-align: middle;
   line-height: 30px;
-  background-color: #fdf1db;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
 }
 
 #mobileMenu, #menuMPjMenu, #menuMPrMenu, #menuMBrMenu, #menuMMoMenu {
@@ -109,7 +117,8 @@
 .desktop {
   justify-content: space-around;
   width: 100%;
-  background-color: #fdf1db;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
 }
 
 .desktop>a, .mobile>a, .mobile>a {
