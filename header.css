@@ -48,6 +48,7 @@
   padding-right: 10px;
   max-width: calc(100% - 20px);
   overflow: visible;
+  height: 100%;
 }
 
 .bodyCon {
