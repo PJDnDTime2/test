@@ -16,12 +16,14 @@ body {
   height: 100%;
 }
 
-loreFrame {
+#loreFrame {
   height: calc(100vh - 42px) !important;
+  overflow: hidden;
 }
 
-fanartFrame {
+#fanartFrame {
   height: calc(100vh - 150px) !important;
+  overflow: hidden;
 }
 
 hr {
