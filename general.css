@@ -13,15 +13,12 @@ body {
   font-weight: 500;
   overflow: visible;
   margin: 0px;
+  height: 100%;
 }
 
 html {
   min-height: 100%;
   overflow: visible;
-}
-
-body {
-  height: 100%;
 }
 
 h1 {
