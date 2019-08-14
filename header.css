@@ -62,7 +62,8 @@
 
 .desktop, .mobile, .ddmenu {
   width: 100%;
-  background-color: #fdf1db;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
 }
 
 .ddmenu:before {
