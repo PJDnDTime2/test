@@ -63,12 +63,3 @@ p {
   text-align: left;
   padding-right: 0;
 }
-
-.stickycodex {
-  position: -webkit-sticky;  /* Safari */
-  position: sticky;
-  top: 24;
-  z-index: 1;
-  background-image: url("bg.jpg");
-  background-repeat: repeat;
-}
