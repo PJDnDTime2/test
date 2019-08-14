@@ -16,6 +16,10 @@ body {
   height: 100%;
 }
 
+iframe {
+  height: calc(100vh - 42px) !important;
+}
+
 html {
   min-height: 100%;
   overflow: visible;
