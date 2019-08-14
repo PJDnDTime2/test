@@ -6,7 +6,8 @@ a {
 }
 
 body {
-  background-color: #20d8ff;
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
   font-size: 13pt;
   font-family: "Spectral";
   font-weight: 500;
