@@ -16,8 +16,12 @@ body {
   height: 100%;
 }
 
-iframe {
+loreFrame {
   height: calc(100vh - 42px) !important;
+}
+
+fanartFrame {
+  height: calc(100vh - 150px) !important;
 }
 
 hr {
