@@ -2,20 +2,20 @@ $(document).ready(function() {
     $(".jqMenu").click(function() {
         var clickedID = "#" + $(this).attr('id') + "Menu";
         if ($(clickedID + ":visible").length) {
-            $(clickedID).slideToggle(10);
+            $(clickedID).slideToggle(200);
         } else if ($(".ddmenu:visible").length) {
-            $(".ddmenu:visible").slideUp(10, function() {
-                $(clickedID).slideToggle(10);
+            $(".ddmenu:visible").slideUp(50, function() {
+                $(clickedID).slideToggle(200);
 				});
 		} else {
-			$(clickedID).slideToggle(10);
+			$(clickedID).slideToggle(200);
         }
     });
 });
 $(document).ready(function() {
     $(".jqMMenu").click(function() {
         var clickedID = "#" + $(this).attr('id') + "Menu";
-		$(clickedID).slideToggle(10);
+		$(clickedID).slideToggle(200);
     });
 });
 $(document).ready(function() {
