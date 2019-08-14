@@ -20,6 +20,14 @@ iframe {
   height: calc(100vh - 42px) !important;
 }
 
+hr {
+  height:1px;
+  border:none;
+  color:#000;
+  background-color:#000;
+}
+
+
 html {
   min-height: 100%;
   overflow: visible;
