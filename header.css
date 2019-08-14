@@ -85,6 +85,10 @@
   background-image: url("bg.jpg");
   background-repeat: repeat;
   width: 100%;
+  position: -webkit-sticky;  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .bannerdndtime {
