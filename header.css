@@ -4,7 +4,7 @@
     margin: auto;
     overflow: visible;
   }
-  .navsquish, .bloo {
+  .navsquish {
     width: calc(1200px - 20px);
     margin: auto;
   }
@@ -17,7 +17,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  #siteContentArea, .navigationbar, .navsquish, .bloo {
+  #siteContentArea, .navigationbar, .navsquish {
     width: 100%;
     margin: 0px;
     overflow: visible;
@@ -35,6 +35,8 @@
   line-height:0;
   width:100%;
   background-color:#20d8ff;
+  margin: 0px;
+  overflow: visible;
 }
 
 #siteContentArea {
