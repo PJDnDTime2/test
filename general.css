@@ -90,6 +90,7 @@ p {
 	height: 0;
 	width: 100%;
 	max-width: 853px;
+	max-height: 853px;
 }
 
 .youtube {
