@@ -88,7 +88,8 @@ p {
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-	width: min(100%, 800px);
+	width: 100%;
+	max-width: 853px;
 }
 
 .youtube {
