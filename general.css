@@ -22,7 +22,7 @@ body {
   overflow: hidden;
 }
 
-#fanartFrame {
+.fanartFrame {
   height: calc(100vh - 250px) !important;
   width: 100%;
   overflow: hidden;
